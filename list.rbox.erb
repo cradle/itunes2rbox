@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+ <dict>
+  <key>list</key>
+   <array>
+    <% stations.each do |station| %><dict>
+     <key>bitrate</key>
+     <integer>0</integer>
+     <key>genre</key>
+     <string></string>
+     <key>name</key>
+     <string><%= station %></string>
+     <key>url</key>
+     <string><%= station %></string>
+    </dict><% end %>
+   </array>
+  <key>version</key>
+  <real>1</real>
+ </dict>
+</plist>
